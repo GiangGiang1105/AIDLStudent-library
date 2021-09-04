@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--Student service component-->
+    <string name="action_student_service">com.example.serveraidl.service.CONNECT_SERVER_DATABASE</string>
+    <string name="component_student_service">com.example.serveraidl/.service.ServerService</string>
+</resources>

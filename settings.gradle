@@ -1,0 +1,3 @@
+rootProject.name = "AIDLLib"
+include ':app'
+include ':aidllibrary'
