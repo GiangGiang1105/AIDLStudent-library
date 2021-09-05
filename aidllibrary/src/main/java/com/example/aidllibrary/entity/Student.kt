@@ -4,7 +4,7 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class Student(
+open class Student(
     var id: Int = 0,
     var name: String = "",
     var age: Int = 0,
