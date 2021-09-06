@@ -23,7 +23,7 @@ class StudentServiceController(context: Context) : StudentServiceConnector.Callb
     override fun addCallback(callback: StudentServiceConnector.Callback) {
         super.addCallback(callback)
         if (callbacks.size > 0) {
-
+            connect()
         }
     }
 
