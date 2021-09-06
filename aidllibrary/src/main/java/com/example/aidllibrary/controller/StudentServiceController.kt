@@ -60,8 +60,11 @@ class StudentServiceController(context: Context) : StudentServiceConnector.Callb
     }
 
     override fun onStudentServiceConnected() {
+        Log.e("TAG", "onStudentServiceConnected: 1", )
+        Log.e("TAG", "onStudentServiceConnected: 2 ${callbacks.size}", )
         coroutineScope.launch {
             callbacks.forEach {
+                Log.e("TAG", "onStudentServiceConnected: 3 ${callbacks.size}", )
                 it.onStudentServiceConnected()
             }
         }
