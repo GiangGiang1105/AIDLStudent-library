@@ -49,6 +49,7 @@ class StudentServiceConnector private constructor(private val context: Context) 
     private val studentServiceCallback = object : IStudentServiceCallback.Stub() {
 
         override fun onGetAllStudentResponse(response: StudentResponse) {
+            Log.e(TAG, "onGetAllStudentResponse: hhhhhahhhahhhhhh", )
             callback?.onGetAllStudentResponse(response)
         }
 
